@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 
 import static org.junit.Assert.*;
 
@@ -16,21 +15,26 @@ public class TestTp1 {
     @Test
     public void testAjouterUn() {
         ArrayList<Integer> tableauPlusUn = new ArrayList<>(Arrays.asList(2, 6, 9, -8, 3, 5, 13));
-        assertEquals(Main.AjouterUn(tableau), tableauPlusUn);
+        assertEquals(tableauPlusUn, Main.AjouterUn(tableau));
     }
 
     @Test
     public void testLen() {
-        assertEquals(Main.MonLen(tableau), 7);
+        assertEquals(7, Main.MonLen(tableau));
     }
 
     @Test
     public void testMax() {
-        assertEquals(Main.MonMax(tableau), 12);
+        assertEquals(12, Main.MonMax(tableau));
     }
 
     @Test
     public void testMin() {
-        assertEquals(Main.MonMin(tableau), -9);
+        assertEquals(-9, Main.MonMin(tableau));
+    }
+
+    public void testSort() {
+        ArrayList<Integer> tableauTrie = new ArrayList<>(Arrays.asList(-9, 1, 2, 4, 5, 9, 12));
+        assertEquals(tableauTrie, Main.trie(tableau));
     }
 }

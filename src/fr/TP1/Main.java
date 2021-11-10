@@ -22,4 +22,9 @@ public class Main {
         // Retourner la valeur minimale du tableau
         return 0;
     }
+
+    public static ArrayList<Integer> trie(ArrayList<Integer> tab) {
+        // Retourner la valeur minimale du tableau
+        return null;
+    }
 }
