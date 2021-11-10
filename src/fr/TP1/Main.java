@@ -23,8 +23,18 @@ public class Main {
         return 0;
     }
 
+    public static ArrayList<Integer> MonRemove(ArrayList<Integer> tab, int valeur) {
+        // Retourner le tableau sans la première instance de "valeur"
+        return null;
+    }
+
+    public static ArrayList<Integer> MonAppend(ArrayList<Integer> tab, int valeur, int position) {
+        // Retourner le tableau avec l'ajout de "valeur" à "position"
+        return null;
+    }
+
     public static ArrayList<Integer> trie(ArrayList<Integer> tab) {
-        // Retourner la valeur minimale du tableau
+        // Retourner le tableau trié
         return null;
     }
 }
