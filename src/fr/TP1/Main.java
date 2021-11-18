@@ -13,6 +13,11 @@ public class Main {
         return 0;
     }
 
+    public static int Search(ArrayList<Integer> tab, int valeur){
+        // Retourner la position de la première instance de "valeur"
+        return 0;
+    }
+
     public static int MonMax(ArrayList<Integer> tab) {
         // Retourner la valeur maximale du tableau
         return 0;

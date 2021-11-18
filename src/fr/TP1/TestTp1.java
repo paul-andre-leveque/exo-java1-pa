@@ -24,6 +24,11 @@ public class TestTp1 {
     }
 
     @Test
+    public void testSearch() {
+        assertEquals(2, Main.Search(tableau, 8));
+    }
+
+    @Test
     public void testMax() {
         assertEquals(12, Main.MonMax(tableau));
     }
