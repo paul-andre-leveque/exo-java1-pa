@@ -20,7 +20,7 @@ public class TestTp1 {
 
     @Test
     public void testLen() {
-        assertEquals(9, Main.MonLen(tableau));
+        assertEquals(tableau.size(), Main.MonLen(tableau));
     }
 
     @Test
