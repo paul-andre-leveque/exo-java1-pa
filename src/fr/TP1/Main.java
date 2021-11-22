@@ -28,6 +28,11 @@ public class Main {
         return 0;
     }
 
+    public static ArrayList<Integer> Inverse(ArrayList<Integer> tab) {
+        // Retourner le tableau à l'envers
+        return null;
+    }
+
     public static ArrayList<Integer> MonRemove(ArrayList<Integer> tab, int valeur) {
         // Retourner le tableau sans la première instance de "valeur"
         return null;

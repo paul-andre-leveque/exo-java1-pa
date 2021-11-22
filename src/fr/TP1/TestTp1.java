@@ -39,6 +39,12 @@ public class TestTp1 {
     }
 
     @Test
+    public void testInverse() {
+        ArrayList<Integer> tableauInverse = new ArrayList<>(Arrays.asList(8, 12, 4, 2, -9, 8, 5, -1));
+        assertEquals(tableauInverse, Main.Inverse(tableau));
+    }
+
+    @Test
     public void testAppend() {
         ArrayList<Integer> tableauAppend = new ArrayList<>(Arrays.asList(-1, 5, 7, 8, -9, 2, 4, 12, 8));
         assertEquals(tableauAppend, Main.MonAppend(tableau, 7, 2));
