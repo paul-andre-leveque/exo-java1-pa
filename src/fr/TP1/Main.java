@@ -38,7 +38,7 @@ public class Main {
         return null;
     }
 
-    public static ArrayList<Integer> MonAppend(ArrayList<Integer> tab, int valeur, int position) {
+    public static ArrayList<Integer> MonInsert(ArrayList<Integer> tab, int valeur, int position) {
         // Retourner le tableau avec l'ajout de "valeur" à "position"
         return null;
     }
