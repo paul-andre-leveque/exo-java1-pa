@@ -14,7 +14,7 @@ public class TestTp1 {
 
     @Test
     public void testAjouterUn() {
-        ArrayList<Integer> tableauPlusUn = new ArrayList<>(Arrays.asList(0, 2, 6, 9, -8, 3, 5, 13, 9));
+        ArrayList<Integer> tableauPlusUn = new ArrayList<>(Arrays.asList(0, 6, 9, -8, 3, 5, 13, 9));
         assertEquals(tableauPlusUn, Main.AjouterUn(tableau));
     }
 
@@ -58,7 +58,7 @@ public class TestTp1 {
 
     @Test
     public void testSort() {
-        ArrayList<Integer> tableauTrie = new ArrayList<>(Arrays.asList(-9, 0, 1, 2, 4, 5, 8, 8, 12));
+        ArrayList<Integer> tableauTrie = new ArrayList<>(Arrays.asList(-9, -1, 2, 4, 5, 8, 8, 12));
         assertEquals(tableauTrie, Main.trie(tableau));
     }
 }
