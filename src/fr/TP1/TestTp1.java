@@ -45,9 +45,9 @@ public class TestTp1 {
     }
 
     @Test
-    public void testAppend() {
-        ArrayList<Integer> tableauAppend = new ArrayList<>(Arrays.asList(-1, 5, 7, 8, -9, 2, 4, 12, 8));
-        assertEquals(tableauAppend, Main.MonInsert(tableau, 7, 2));
+    public void testInsert() {
+        ArrayList<Integer> tableauInsert = new ArrayList<>(Arrays.asList(1, 5, 7, 8, -9, 2, 4, 12, 8));
+        assertEquals(tableauInsert, Main.MonInsert(tableau, 7, 2));
     }
 
     @Test
