@@ -32,4 +32,14 @@ public class Main {
 
         return null;
     }
+
+    public static ArrayList<ArrayList<Integer>> Multiplication(ArrayList<ArrayList<Integer>> A, ArrayList<ArrayList<Integer>> B) {
+        // Retourne la multiplication des matrices A et B
+        // Les matrices sont forcément valides (Pas de {{1, 2}, {3, 4, 5}})
+        // Mais la multiplication peut être impossible (Comme : {{1, 2}, {3, 4}} x {{5, 6}, {7, 8}, {9, 10}})
+        // La fonction doit marcher sur toutes les tailles de matrice, dès 1x1
+
+
+        return null;
+    }
 }
