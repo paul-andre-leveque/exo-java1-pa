@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 import static org.junit.Assert.*;
 
@@ -60,5 +61,11 @@ public class TestTp1 {
     public void testSort() {
         ArrayList<Integer> tableauTrie = new ArrayList<>(Arrays.asList(-9, -1, 2, 4, 5, 8, 8, 12));
         assertEquals(tableauTrie, Main.trie(tableau));
+    }
+
+    @Test
+    public void testPair() {
+        ArrayList<Integer> res = new ArrayList<>(Arrays.asList(-1, 5, -9));
+        assertEquals(res, Main.nonPair(tableau));
     }
 }

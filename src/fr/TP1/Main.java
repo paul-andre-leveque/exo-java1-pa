@@ -47,4 +47,10 @@ public class Main {
         // Retourner le tableau trié
         return null;
     }
+
+    public static ArrayList<Integer> nonPair(ArrayList<Integer> tab) {
+        // Retourner le tableau sans les nombres pairs
+        // Il faut utiliser un itérateur, et la boucle for => il ne faut pas créer un autre tableau
+        return null;
+    }
 }
