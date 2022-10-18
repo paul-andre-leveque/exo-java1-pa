@@ -13,6 +13,11 @@ public class Main {
         return 0;
     }
 
+    public static int Search(ArrayList<Integer> tab, int valeur){
+        // Retourner la position de la première instance de "valeur"
+        return 0;
+    }
+
     public static int MonMax(ArrayList<Integer> tab) {
         // Retourner la valeur maximale du tableau
         return 0;
@@ -23,8 +28,29 @@ public class Main {
         return 0;
     }
 
+    public static ArrayList<Integer> Inverse(ArrayList<Integer> tab) {
+        // Retourner le tableau à l'envers
+        return null;
+    }
+
+    public static ArrayList<Integer> MonRemove(ArrayList<Integer> tab, int valeur) {
+        // Retourner le tableau sans la première instance de "valeur"
+        return null;
+    }
+
+    public static ArrayList<Integer> MonInsert(ArrayList<Integer> tab, int valeur, int position) {
+        // Retourner le tableau avec l'ajout de "valeur" à "position"
+        return null;
+    }
+
     public static ArrayList<Integer> trie(ArrayList<Integer> tab) {
-        // Retourner la valeur minimale du tableau
+        // Retourner le tableau trié
+        return null;
+    }
+
+    public static ArrayList<Integer> nonPair(ArrayList<Integer> tab) {
+        // Retourner le tableau sans les nombres pairs
+        // Il faut utiliser un itérateur, et la boucle for => il ne faut pas créer un autre tableau
         return null;
     }
 }
