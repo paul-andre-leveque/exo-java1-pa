@@ -3,6 +3,17 @@ package fr.TP1;
 import java.util.ArrayList;
 
 public class Main {
+    public static int AfficherTableau(ArrayList<Integer> tab) {
+        // Afficher un tableau dans le terminal
+
+        return 0;
+    }
+
+    public static ArrayList<Integer> AjouterValeur(ArrayList<Integer> tab) {
+        // Ajouter une case au tableau ayant pour valeur 2
+        return null;
+    }
+
     public static ArrayList<Integer> AjouterUn(ArrayList<Integer> tab) {
         // Ajouter 1 à toutes les valeurs du tableau
         return null;

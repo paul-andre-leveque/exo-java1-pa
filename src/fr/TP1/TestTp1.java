@@ -13,6 +13,17 @@ public class TestTp1 {
 
 
     @Test
+    public void testAfficherTableau() {
+        assertEquals(0, Main.AfficherTableau(tableau));
+    }
+
+    @Test
+    public void testAjouterValeur() {
+        ArrayList<Integer> tableauFinal = new ArrayList<>(Arrays.asList(-1, 5, 8, -9, 2, 4, 12, 8, 2));
+        assertEquals(tableauFinal, Main.AjouterValeur(tableau));
+    }
+
+    @Test
     public void testAjouterUn() {
         ArrayList<Integer> tableauPlusUn = new ArrayList<>(Arrays.asList(0, 6, 9, -8, 3, 5, 13, 9));
         assertEquals(tableauPlusUn, Main.AjouterUn(tableau));
