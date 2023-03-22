@@ -26,28 +26,23 @@ public class Nourrice extends Fourmis {
     }
 
     // Méthode nurse pour transformer un œuf en fourmi
-    public void nurse(Fourmiliere fourmiliere) {
+    public Fourmis nurse(Fourmiliere fourmiliere) {
         if (fourmiliere.getNbOeufs() > 0) {
             fourmiliere.setNbOeufs(fourmiliere.getNbOeufs() - 1);
             Random rand = new Random();
-            int randomFourmiType = rand.nextInt(3);
-            Fourmis newFourmi;
+            int type = rand.nextInt(3);
+            int age = rand.nextInt(6) + 1;
+            int force = rand.nextInt(6) + 1;
 
-            switch (randomFourmiType) {
-                case 0:
-                    newFourmi = new Nourrice(0, 10); // Ajouter les paramètres appropriés pour la classe Nourrice
-                    break;
-                case 1:
-                    newFourmi = new Chasseresse(0, 10); // Ajouter les paramètres appropriés pour la classe Chasseresse
-                    break;
-                case 2:
-                    newFourmi = new Ouvriere(0, 10); // Ajouter les paramètres appropriés pour la classe Ouvriere
-                    break;
-                default:
-                    throw new IllegalStateException("Erreur dans la génération aléatoire de type de fourmi");
+            if (type == 0) {
+                return new Chasseresse(age, force);
+            } else if (type == 1) {
+                return new Nourrice(age, force);
+            } else {
+                return new Ouvriere(age, force);
             }
-
-            fourmiliere.ajouterFourmi(newFourmi);
         }
+        return null;
     }
 }
+

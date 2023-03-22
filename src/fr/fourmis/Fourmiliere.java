@@ -54,29 +54,26 @@ public class Fourmiliere {
     }
 
     public void action() {
-        Random random = new Random();
+        Random rand = new Random();
+        nbOeufs += rand.nextInt(6);
 
-        // Augmenter le nombre d'œufs d'un nombre aléatoire entre 0 et 5
-        nbOeufs += random.nextInt(6);
-
-        // Retirer un point de nourriture par fourmi présente
         stockNourriture -= fourmis.size();
-        if (stockNourriture < 0) {
-            stockNourriture = 0;
-        }
 
-        // Activer chaque fourmi avec sa compétence spéciale
-        for (Fourmis fourmi : fourmis) {
-            if (fourmi instanceof Nourrice) {
-                ((Nourrice) fourmi).nurse(this);
-            } else if (fourmi instanceof Chasseresse) {
-                ((Chasseresse) fourmi).chasser(this);
-            } else if (fourmi instanceof Ouvriere) {
-                ((Ouvriere) fourmi).agrandissement(this);
+        List<Fourmis> newFourmis = new ArrayList<>();
+        for (Fourmis f : fourmis) {
+            if (f instanceof Chasseresse) {
+                ((Chasseresse) f).chasser(this);
+            } else if (f instanceof Nourrice) {
+                Fourmis newFourmi = ((Nourrice) f).nurse(this);
+                if (newFourmi != null) {
+                    newFourmis.add(newFourmi);
+                }
+            } else if (f instanceof Ouvriere) {
+                ((Ouvriere) f).agrandissement(this);
             }
         }
+        fourmis.addAll(newFourmis);
     }
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
