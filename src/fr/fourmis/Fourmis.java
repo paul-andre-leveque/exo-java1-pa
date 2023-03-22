@@ -1,4 +1,4 @@
-package fr.Fourmis;
+package fr.fourmis;
 
 public class Fourmis {
     private int age;

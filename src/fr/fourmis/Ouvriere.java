@@ -1,4 +1,4 @@
-package fr.Fourmis;
+package fr.fourmis;
 
 public class Ouvriere extends Fourmis {
     public Ouvriere(int age, int force) {

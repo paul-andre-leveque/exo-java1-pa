@@ -1,4 +1,4 @@
-package fr.Fourmis;
+package fr.fourmis;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Chasseresse extends Fourmis {

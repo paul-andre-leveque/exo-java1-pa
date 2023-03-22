@@ -1,4 +1,4 @@
-package fr.Fourmis;
+package fr.fourmis;
 
 public class Main {
     public static void main(String[] args) {

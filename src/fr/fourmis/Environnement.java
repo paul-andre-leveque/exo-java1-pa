@@ -1,4 +1,4 @@
-package fr.Fourmis;
+package fr.fourmis;
 
 public enum Environnement {
     SABLE,
