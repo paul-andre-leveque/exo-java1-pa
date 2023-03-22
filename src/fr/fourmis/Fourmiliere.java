@@ -76,4 +76,21 @@ public class Fourmiliere {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nombre d'oeufs: ").append(nbOeufs).append("\n");
+        sb.append("Stock de nourriture: ").append(stockNourriture).append("\n");
+        sb.append("Nombre de salles: ").append(nbSalles).append("\n");
+        sb.append("Fourmis présentes:\n");
+
+        for (Fourmis f : fourmis) {
+            sb.append("  - ").append(f.toString()).append("\n");
+        }
+
+        return sb.toString();
+    }
 }
+
+
