@@ -1,0 +1,84 @@
+# Fourmis
+
+- Créez la classe ‘Fourmis’ qui possède deux attributs entiers représentant l’âge et la force de
+chaque fourmi.
+- La classe Fourmis ne contiendra qu’un seul constructeur prenant en paramètres tous les
+attributs de classe.
+- Créez une méthode ‘communication’ permettant à chaque fourmi de communiquer avec une
+fourmi passée en paramètre. La méthode affichera un message simple que vous êtes libre de
+choisir.
+- Créez la méthode ‘deplacement’ retournant la vitesse d’une fourmi. Cette méthode dépendra
+de l’environnement sur lequel la fourmi est présente et qui sera défini en paramètre.
+L’environnement peut prendre les valeurs suivantes : sable, roche, herbe.
+De plus, la vitesse dépendra de la spécialisation de la fourmi et donc sa valeur ne peut pas
+être calculée dans la classe Fourmis.
+- Implémentez la méthode ‘toString’ qui affichera l’âge et la force de la fourmi.
+
+# Fourmilière
+
+- Créez la classe ‘Fourmiliere’ qui possède quatre attributs :
+◦ un entier représentant le nombre d’œufs
+◦ un entier représentant le stock de nourriture
+◦ un entier représentant le nombre de salles
+◦ une collection stockant un ensemble de fourmis présentes dans la fourmilière.
+- La classe Fourmilière ne contient qu’un constructeur par défaut qui donne des valeurs
+aléatoires aux différents attributs entiers. Ainsi le nombre d’œufs sera entre 10 et 20, le stock
+de nourriture entre 15 et 20 et le nombre de salles entre 3 et 7.
+Pour générer un nombre aléatoire vous utiliserez la classe ‘Random’ dont vous trouverez la
+documentation ici : [https://docs.oracle.com/javase/8/docs/api/java/util/Random.html](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html)
+
+# Nourrice
+
+- Créez la classe Nourrice héritant de la classe fourmi.
+- La vitesse d’une fourmi de type nourrice sur l’herbe est 0.5 et sur les autres éléments (sable
+ou roche) elle est de 1.0. Utiliser cette information pour définir la méthode ‘deplacement’.
+- Lorsque vous retournez le flux String correspondant à l’objet vous devez indiquer qu’il
+s’agit d’une nourrice.
+- Les nourrices possèdent la méthode ‘nurse’ qui prend en paramètre une fourmilière et si au
+minimum un œuf est présent le transforme en fourmi (qui rejoint immédiatement la
+fourmilière). La fourmi a autant de chance d’être une chasseresse, nourrice ou ouvrière.
+
+# Chasseresse
+
+- Créez la classe Chasseresse héritant de la classe fourmis.
+- La vitesse d’une fourmi de type Chasseresse est sa force peu importe le type de terrain.
+Utiliser cette information pour définir la méthode ‘deplacement’.
+- Lorsque vous retournez le flux String correspondant à l’objet vous devez indiquer qu’il
+s’agit d’une Chasseresse et vous indiquerez le numéro de la chasseresse (chaque
+chasseresse aura un numéro unique).
+- Les chasseresses possèdent la méthode ‘chasser’ qui prend en paramètre une fourmilière et
+qui augmente le stock de nourriture de la fourmiliere d’autant que la force de la chasseresse.
+
+# Ouvrière
+
+- Créez la classe Ouvriere héritant de la classe fourmis.
+- La vitesse d’une fourmis de type Ouvrière est de 2 sur la sable sinon elle est de 1.0 Utiliser
+cette information pour définir la méthode ‘deplacement’.
+- Lorsque vous retournez le flux String correspondant à l’objet vous devez indiquer qu’il
+s’agit d’une Ouvrière.
+- Les ouvrières possèdent la méthode ‘agrandissement’ qui prend en paramètre une
+fourmilière et ont 0.1 / (age de l’ouvrière) * 100 % de chance de construire une nouvelle
+salle dans la fourmilière.
+
+# Méthodes
+
+La fourmilière possède la méthode toString donnant toutes les informations sur celle-ci. Le résultat
+de cette méthode doit être sous cette forme :
+
+![fourmissssssse.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae34bce2-228c-40ae-ac20-ee0b4b8049d5/fourmissssssse.png)
+
+Vous devez implémenter cette méthode en utilisant les itérateurs.
+
+# La méthode 'action'
+
+Ajoutez la méthode ‘action’ à la classe fourmilière qui permet :
+
+- d’augmenter le nombre d’œufs d’un nombre aléatoire entre 0 et 5.
+- de retirer un point de nourriture par fourmi présente.
+- d’activer chaque fourmi avec sa compétence spéciale (chasser, nurse, agrandissement).
+
+# Exceptions
+
+Définissez une classe ExceptionNourriture qui est émise par la fourmilière lorsque le nombre de
+nourriture est supérieur à 10 fois le nombre de salle. Cette exception ne peut être provoquée que
+lorsqu’une chasseresse appelle sa méthode ‘chasser’. Lorsque l’exception est émise elle sera gérée par la chasseresse ayant rapportée la nourriture qui affichera le message suivant : « La chasseresse NUMERO_CHASSERESSE a travaillé pour rien ! »
