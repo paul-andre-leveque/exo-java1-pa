@@ -80,7 +80,7 @@ public class Fourmiliere {
         sb.append("Nombre d'oeufs: ").append(nbOeufs).append("\n");
         sb.append("Stock de nourriture: ").append(stockNourriture).append("\n");
         sb.append("Nombre de salles: ").append(nbSalles).append("\n");
-        sb.append("Fourmis présentes:\n");
+        sb.append("Fourmis presentes:\n");
 
         for (Fourmis f : fourmis) {
             sb.append("  - ").append(f.toString()).append("\n");

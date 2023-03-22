@@ -15,14 +15,14 @@ public class Main {
         fourmiliere.ajouterFourmi(ouvriere1);
 
         // Affichage des informations initiales de la fourmilière
-        System.out.println("Fourmilière avant l'action :");
+        System.out.println("Fourmiliere avant l'action :");
         System.out.println(fourmiliere);
 
         // Appel de la méthode 'action' de la fourmilière
         fourmiliere.action();
 
         // Affichage des informations de la fourmilière après l'action
-        System.out.println("Fourmilière après l'action :");
+        System.out.println("Fourmiliere apres l'action :");
         System.out.println(fourmiliere);
 
         // Test de la méthode 'chasser' pour provoquer l'exception ExceptionNourriture

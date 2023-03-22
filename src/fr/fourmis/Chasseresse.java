@@ -22,7 +22,7 @@ public class Chasseresse extends Fourmis {
     // Implémentation de la méthode toString pour la classe Chasseresse
     @Override
     public String toString() {
-        return "Chasseresse [" + super.toString() + ", Numéro = " + numeroChasseresse + "]";
+        return "Chasseresse " + super.toString() + ", Numero = " + numeroChasseresse + "]";
     }
 
     // Méthode chasser pour augmenter le stock de nourriture de la fourmilière
@@ -30,7 +30,7 @@ public class Chasseresse extends Fourmis {
         int newStockNourriture = fourmiliere.getStockNourriture() + getForce();
         try {
             if (newStockNourriture > 10 * fourmiliere.getNbSalles()) {
-                throw new ExceptionNourriture("La chasseresse " + getNumeroChasseresse() + " a travaillé pour rien !");
+                throw new ExceptionNourriture("La chasseresse " + getNumeroChasseresse() + " a travaille pour rien !");
             } else {
                 fourmiliere.setStockNourriture(newStockNourriture);
             }

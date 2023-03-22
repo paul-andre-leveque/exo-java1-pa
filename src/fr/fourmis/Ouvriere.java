@@ -16,7 +16,7 @@ public class Ouvriere extends Fourmis {
 
     @Override
     public String toString() {
-        return "Ouvrière - " + super.toString();
+        return "Ouvriere - " + super.toString();
     }
 
     public void agrandissement(Fourmiliere fourmiliere) {

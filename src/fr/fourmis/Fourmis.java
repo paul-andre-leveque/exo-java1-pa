@@ -23,7 +23,7 @@ public class Fourmis {
     // Implémentation de la méthode toString
     @Override
     public String toString() {
-        return "Fourmis [Âge = " + age + ", Force = " + force + "]";
+        return "Fourmis [Age = " + age + ", Force = " + force + "]";
     }
 
     // Getter pour l'âge de la fourmi
